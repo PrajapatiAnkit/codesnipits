@@ -1,7 +1,7 @@
 <?php
 
-    //$url = "http://localhost/projects/codesnipits/curl/script.php";
-    $url = "https://sknessentials.com/ajax/ajax_enquiry.php";
+    $url = "http://localhost/projects/codesnipits/curl/script.php";
+    $url = "online-path-url";
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);

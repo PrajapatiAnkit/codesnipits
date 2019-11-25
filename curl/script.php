@@ -2,4 +2,12 @@
 
 $connection = new mysqli("localhost","root","","codesnipits");
 
-print_r($_POST);
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$timing = $_POST['timing'];
+
+$query = "INSERT INTO curl SET name='$name',phone='$phone',timing='$timing' ";
+$res = $connection->query($query);
+if ($res){
+    echo 'successs';
+}
